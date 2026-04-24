@@ -1,9 +1,9 @@
 import { React } from "react";
 
-export default function Login () {
+export default function Locations () {
     return (
         <>
-            <div>Login Page</div>
+         <div>Locations Page</div>
         </>
     );
 }
