@@ -1,0 +1,15 @@
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

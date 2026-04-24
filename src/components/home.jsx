@@ -16,7 +16,7 @@ export default function Home () {
 
                             {/**left-side text */}
                             <div className="col-md-6 text-center text-md-start mb-4 mb-md-6">
-                                <h1 className="display-5 fw-bold">Find Trusted Childcare Near You</h1>
+                                <h1 className="display-5 fw-bold">Childcare Placeholder</h1>
 
                                 <p className="lead">
                                     Verified childcare directors. Safe, reliable, and flexible.
@@ -29,7 +29,9 @@ export default function Home () {
 
                             {/**right-side carousel */}
                             <div className="cold-md-6">
-                                <div id="heroCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+                                <div id="heroCarousel" className="carousel slide carousel-fade" 
+                                        data-bs-ride="carousel" 
+                                        data-bs-interval="3000">
                                     <div className="carousel-inner rounded shadow">
                                         <div className="carousel-item active">
                                             <img src={pic1} className="d-block w-100" alt="carousel_pic_1" />
@@ -119,7 +121,7 @@ export default function Home () {
                 </section> 
 
                 {/**call-to-action section */}
-                <section className="bg-primary text-white text-center py-5">
+                <section className="bg-info text-white text-center py-5">
                     <div className="container">
                         <h2>Ready to Get Started?</h2>
                         <p>Join us Today.</p>

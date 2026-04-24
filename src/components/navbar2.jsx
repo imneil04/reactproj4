@@ -6,9 +6,10 @@ export default function Navbar2 () {
     <nav className="navbar navbar-expand-lg custom-navbar sticky-top shadow-sm">
       <div className="container">
         <NavLink className="navbar-brand brand" to="/">
-           Placeholder childcare
+            Placeholder childcare
         </NavLink>
-
+        <i className="fa-solid fa-umbrella-beach"></i>
+        
         <button
           className="navbar-toggler"
           type="button"

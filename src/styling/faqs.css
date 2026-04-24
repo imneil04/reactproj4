@@ -1,0 +1,21 @@
+
+.accordion-item {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f8f9fa;
+  box-shadow: none;
+}
+
+.accordion-body {
+  color: #555;
+  line-height: 1.6;
+}
