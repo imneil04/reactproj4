@@ -10,7 +10,7 @@ import Contact from './components/contact';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 import Navbar2 from './components/navbar2';
-import Login from './components/login';
+import Login from './components/loginwtanimation';
 import Signup from './components/signup';
 //other links
 import FAQs from './components/faqs';

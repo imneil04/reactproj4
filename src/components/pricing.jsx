@@ -12,7 +12,7 @@ export default function Pricing () {
          <div className="bg-light text-center py-5">
             <h1 className="fw-bold">Simple, Transparent Rates</h1>
             <p className="text-muted">
-                Quality childcare with flexible plans that fit your familiy's needs
+                Quality childcare with flexible plans that fit your family's needs
             </p>
 
             <button className="btn btn-primary mt-3">Book a Tour</button>
