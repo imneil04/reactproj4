@@ -1,3 +1,7 @@
+.iconch {
+  color: #eb9cb5;
+}
+
 .card:hover {
   transform: translateY(-5px);
   transition: 0.3s ease;
@@ -13,3 +17,41 @@ section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+/*hover effects for team cards */
+.tcardhover-underline {
+  position: relative;
+}
+
+.tcardhover-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: #a8edea;
+  transition: width 0.3s ease;
+}
+
+.tcardhover-underline:hover::after {
+  width: 100%;
+}
+
+
+/*hover effects for core values container*/
+.corvhover-glow {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.corvhover-glow:hover {
+  border-color: #eb9cb5;
+  box-shadow: 0 0 12px rgba(13, 110, 253, 0.4);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+
+
+

@@ -25,7 +25,7 @@ export default function Signup () {
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ delay: 0.2 }}>
                                         
-                                        Create an account 🧾
+                                        Create an account ✅
                                     </motion.h2>
 
                                      <p className="text-muted mb-4">
@@ -86,7 +86,7 @@ export default function Signup () {
                                         <motion.button
                                             whileHover={{ scale: 1.03 }}
                                             whileTap={{ scale: 0.97 }}
-                                            className="btn btn-primary w-100 mb-3">
+                                            className="btn w-100 mb-3 btnSignup">
                                             Sign Up Now
                                         </motion.button>
 

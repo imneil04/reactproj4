@@ -1,21 +1,29 @@
 import { React, use, useState } from "react";
 import { pricingData } from "../data/pricingData";
+import { motion } from "motion/react";
 //import { perks } from "../data/faqsData";
+import { useNavigate } from "react-router-dom";
+import "../styling/pricing.css";
 
 export default function Pricing () {
 
     const [location, setLocation] = useState("Calgary");
 
+    const navigate = useNavigate();
+
     return (
         <>
         {/**Hero */}
          <div className="bg-light text-center py-5">
-            <h1 className="fw-bold">Simple, Transparent Rates</h1>
-            <p className="text-muted">
-                Quality childcare with flexible plans that fit your family's needs
-            </p>
+            <motion.div animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 0.7 }}>
 
-            <button className="btn btn-primary mt-3">Book a Tour</button>
+                <h1 className="fw-bold">Simple, Transparent Rates</h1>
+                <p className="text-muted">
+                    Quality childcare with flexible plans that fit your family's needs
+                </p>
+            </motion.div>
+
+            <button className="btn btn-secondary mt-3">Book a Tour</button>
          </div>
 
          {/**Location toggle */}
@@ -59,7 +67,7 @@ export default function Pricing () {
                                     ))}
                                 </ul>
 
-                                <button className="btn btn-outline-primary mt-3">
+                                <button className="btn btn-outline-primary mt-3" onClick={() => navigate("/signup")}>
                                     Enroll Now
                                 </button>
                             </div>
@@ -92,11 +100,11 @@ export default function Pricing () {
             </div>
          </div>
 
-         {/**CTA */}
-         <div className="text-center py-5 bg-secondary text-white">
-            <h2 className="fw-bold">Ready to Get Started?</h2>
-            <p>Secure your child's spot today (placeholder)</p>
-            <button className="btn btn-light">Enroll Now</button>
+         {/**Call-to-action */}
+         <div className="text-center py-5 text-white bgPricing">
+            <h2 className="fw-bold">Need answers to more questions?</h2>
+            <p>Feel free to reach out to us anytime. (placeholder)</p>
+            <button className="btn btn-lg btnPricingRO" onClick={() => navigate("/contact")}>Reach Out</button>
          </div>
         </>
     );

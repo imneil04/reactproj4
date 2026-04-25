@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
-import lpic1 from "../images/mttpic.jpg";
+import lpic1 from "../images/playgroundpic.jpg";
 
 export default function LoginAnimation () {
     return (
@@ -56,7 +56,7 @@ export default function LoginAnimation () {
                                             <motion.button
                                                     whileHover={{ scale: 1.03 }}
                                                     whileTap={{ scale: 0.97 }}
-                                                    className="btn btn-primary w-100 mb-3">
+                                                    className="btn w-100 mb-3 btnLogin">
                                                     Login
                                             </motion.button>
 
@@ -67,7 +67,7 @@ export default function LoginAnimation () {
                                             </button>
 
                                             <p className="mt-4 text-center">
-                                                    Don’t have an account? <Link to="/signup">Sign up</Link>
+                                                    Dont have an account? <Link to="/signup">Sign up</Link>
                                             </p>
                                         </form>
                                     </div>
@@ -77,15 +77,14 @@ export default function LoginAnimation () {
                                         <motion.div
                                             initial={{ opacity: 0, x: 40 }}
                                             animate={{ opacity: 1, x: 0 }}
-                                            transition={{ delay: 0.3 }}
-                                            className="text-center px-4">
+                                            transition={{ delay: 0.3 }}>
                                             
-                                        </motion.div>
-                                        <img src={lpic1} 
+                                            <img src={lpic1} 
                                             alt="loginr"
                                             className="img-fluid h-100 w-100"
                                             style={{ objectFit: "cover" }}
-                                    />
+                                            />
+                                        </motion.div>
                                     </div>
                                 </div>
                             </div>

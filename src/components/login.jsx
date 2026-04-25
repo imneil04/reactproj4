@@ -80,7 +80,7 @@ export default function Login () {
                             alt="loginr"
                             className="img-fluid h-100 w-100"
                             style={{ objectFit: "cover" }}
-                    />
+                        />
                     </div>
                 </div>
             </div>

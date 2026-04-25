@@ -1,0 +1,12 @@
+.bgHome {
+    background-color: #76d8d3 !important;
+}
+
+.btnHomeGS {
+    background-color: rgb(224, 215, 215) !important;
+}
+
+.btnHomeGS:hover {
+    background-color: #90ece8 !important;
+    color: #000000 !important;
+}

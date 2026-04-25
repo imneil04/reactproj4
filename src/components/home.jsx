@@ -4,8 +4,13 @@ import pic1 from "../images/pic1.jpg";
 import pic2 from "../images/pic2.jpg";
 import pic3 from "../images/pic3.jpg";
 import pic4 from "../images/pic4.jpg";
+import { useNavigate } from "react-router-dom";
+import "../styling/home.css";
 
 export default function Home () {
+
+    const navigate = useNavigate();
+
     return (
         <>
           <div>
@@ -15,16 +20,18 @@ export default function Home () {
                         <div className="row align-items-center">
 
                             {/**left-side text */}
-                            <div className="col-md-6 text-center text-md-start mb-4 mb-md-6">
-                                <h1 className="display-5 fw-bold">Childcare Placeholder</h1>
+                            <div className="row justify-content-center">
+                                <div className="col-md-6 text-center mb-4 mb-md-5">
+                                    <h1 className="display-5 fw-bold">Childcare Placeholder</h1>
 
-                                <p className="lead">
-                                    Verified childcare directors. Safe, reliable, and flexible.
-                                </p>
+                                    <p className="lead">
+                                        Verified childcare directors. Safe, reliable, and flexible.
+                                    </p>
 
-                                <button className="btn btn-primary btn-lg mt-3">
-                                    Get Started
-                                </button>
+                                    <button className="btn btn-lg mt-3 btnHomeGS" onClick={() => navigate("/contact")}>
+                                        Get Started
+                                    </button>
+                                </div>
                             </div>
 
                             {/**right-side carousel */}
@@ -121,12 +128,12 @@ export default function Home () {
                 </section> 
 
                 {/**call-to-action section */}
-                <section className="bg-info text-white text-center py-5">
+                <section className="text-white text-center py-5 bgHome">
                     <div className="container">
                         <h2>Ready to Get Started?</h2>
                         <p>Join us Today.</p>
 
-                        <button className="btn btn-light btn-lg">
+                        <button className="btn btn-lg btnHomeGS" onClick={() => navigate("/signup")}>
                             Sign up for free
                         </button>
                     </div>

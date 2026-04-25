@@ -23,7 +23,31 @@
   border: none;
 }
 
-/* buttons */
+/* button */
 .btn {
   border-radius: 10px;
+}
+
+/* button - login, signup */
+.btnLogin, .btnSignup {
+  background-color: #000000;
+  color: aliceblue;
+}
+
+.btnLogin:hover {
+  background-color: #a8edea;
+}
+
+.btnSignup:hover {
+  background-color: #fed6e3;
+}
+
+/* button - contact */
+.btnContact {
+  background-color: #000000;
+  color: aliceblue;
+}
+
+.btnContact:hover {
+  background-color: #0baca4;
 }

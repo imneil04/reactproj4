@@ -13,7 +13,7 @@ export default function About () {
             <div>
                 <section className="bg-light text-center py-5">
                     <div className="container">
-                        <h1 className="fw-bold">About Us</h1>
+                        <h1 className="fw-bold">About Us <i className="bi bi-clock-history iconch"></i></h1>
                         <p className="lead text-muted">
                             Caring for children. Supporting families. Building memorable futures. (placeholders)
                         </p>
@@ -55,7 +55,7 @@ export default function About () {
                             {["Safety First", "Learning Through Play", "Inclusivity", "Parent Partnership"].map(
                                 (value, index) => (
                                     <div className="col-md-3" key={index}>
-                                        <div className="p-4 bg-white shadow-sm rounded h-100">
+                                        <div className="p-4 bg-white shadow-sm rounded h-100 corvhover-glow">
                                             <h5>{value}</h5>
                                         </div>
                                     </div>
@@ -72,7 +72,7 @@ export default function About () {
                         <div className="row g-4">
                             {teamMembers.map((member) => (
                                 <div className="col-md-3" key={member.id} >
-                                    <div className="card border-0 shadow-sm h-100">
+                                    <div className="card border-0 shadow-sm h-100 tcardhover-underline">
                                         <img src={member.img} 
                                              className="card-img-top"
                                              alt={member.name}
@@ -114,7 +114,7 @@ export default function About () {
                         <p className="text-muted mb-4">
                             Discover a childcare experience built around your family. (placeholder)
                         </p>
-                        <button className="btn btn-primary px-4 me-2">Book a Tour</button>
+                        <button className="btn btn-secondary px-4 me-2">Book a Tour</button>
                         <button className="btn btn-outline-primary px-4" 
                                 onClick={() => navigate("/contact")}>Contact Us</button>
                     </div>

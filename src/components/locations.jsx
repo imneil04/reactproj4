@@ -1,11 +1,12 @@
 import { React } from "react";
 import { locations } from "../data/locations.js";
+import "../styling/location.css";
 
 export default function Locations () {
     return (
         <>
          <div className="container py-5">
-            <h1 className="text-center mb-3">Our Locations</h1>
+            <h1 className="text-center mb-3">Our Locations <i className="bi bi-map iconloc"></i></h1>
             <p className="text-center text-muted mb-5">
                 Find a childcare center near you.
             </p>

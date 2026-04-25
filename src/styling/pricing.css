@@ -1,0 +1,12 @@
+.bgPricing {
+    background-color: #d1859d;
+}
+
+.btnPricingRO {
+    background-color: rgb(224, 215, 215) !important;
+}
+
+.btnPricingRO:hover {
+    background-color: #e0a6b9 !important;
+    color: #000000 !important;
+}
