@@ -7,8 +7,11 @@ export default function FAQ () {
     return (
         <>
             <div className="container py-5">
-                <h2 className="text-center mb-4">Frequently Asked Questions</h2>
-
+                <div>
+                    <h2 className="text-center mb-3">Frequently Asked Questions <i className="bi bi-patch-question"></i></h2>
+                    <p className="text-muted text-center mt-2">Quick answers to most well-known questions. (placeholder)</p>
+                </div>
+                
                 <div className="accordion" id="faqsAccordion">
                     {faqs.map((faq, index) => (
                         <div className="accordion-item shadow-sm mb-3 rounded" key={index}>

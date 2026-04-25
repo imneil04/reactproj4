@@ -14,6 +14,7 @@ import Login from './components/loginwtanimation';
 import Signup from './components/signup';
 //other links
 import FAQs from './components/faqs';
+import Reviews from './components/reviews';
 
 export default function App () {
   
@@ -33,6 +34,7 @@ export default function App () {
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/faqs" element={<FAQs />} />
+                <Route path="/reviews" element={<Reviews />} />
               </Routes>
             </main>
           <Footer />
