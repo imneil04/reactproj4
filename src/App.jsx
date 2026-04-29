@@ -15,6 +15,7 @@ import Signup from './components/signup';
 //other links
 import FAQs from './components/faqs';
 import Reviews from './components/reviews';
+import Careers from './components/careers';
 
 export default function App () {
   
@@ -35,6 +36,7 @@ export default function App () {
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/faqs" element={<FAQs />} />
                 <Route path="/reviews" element={<Reviews />} />
+                <Route path="/careers" element={<Careers />} />
               </Routes>
             </main>
           <Footer />
